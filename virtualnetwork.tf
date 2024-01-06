@@ -1,7 +1,7 @@
 resource "azurerm_network_security_group" "vn-sg1" {
   name                = "security-group"
   location            = azurerm_resource_group.tf-rg-philippe.location
-  resource_group_name = azurerm_resource_group.example.name
+  resource_group_name = azurerm_resource_group.tf-rg-philippe.name
 }
 
 locals {
@@ -24,7 +24,7 @@ resource "azurerm_virtual_network" "virtual-network-group" {
   subnet {
     name           = "subnet2"
     address_prefix = "10.0.2.0/24"
-    security_group = azurerm_network_security_group.example.id
+    security_group = azurerm_network_security_group.vn-sg1.id
   }
 
   tags = {

@@ -78,3 +78,29 @@ variable "prefix"{
  type=string
  default="mcit"
 }
+
+
+variable "example_map" {
+type = map(object({
+  name = string
+  enemies_destroyed = number
+  badguy = bool
+}))
+default = {
+  key1 = {
+    name = "luke"
+    enemies_destroyed = 4252
+    badguy = false
+  }
+  key2 = {
+    name = "yoda"
+    enemies_destroyed = 900
+    badguy = false
+  }
+  key3 = {
+    name = "darth"
+    enemies_destroyed = 202032989844
+    badguy = true
+    }
+  }
+}

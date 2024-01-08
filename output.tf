@@ -59,3 +59,7 @@ output "numberlist_2"{
 output "sumofnumberlist_2"{
   value=sum([for numbers in var.numberlist_var:numbers])
 }
+
+output "map_of_object_ex" {
+  value = var.example_map
+}

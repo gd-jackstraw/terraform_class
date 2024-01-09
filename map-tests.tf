@@ -5,10 +5,10 @@ locals {
 map = {
   for index, character in toset(local.characters) :
 # Convert chracter list to a set
-    character => local.enemies_destroyed[number]
+    character => local.enemies_destroyed[index]
   }
 }
 
 output "character_kills"{
-  value= local.map
+  value= [for index, character in toset(local.characters):character => local.enemies_destroyed[index]]
 }

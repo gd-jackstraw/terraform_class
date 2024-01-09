@@ -71,3 +71,9 @@ output "map_of_force_users" {
 output "lightsaber_colors" {
   value = var.lightsaber_color_map
 }
+
+
+output "character_kills"{
+  value=[for index, character in toset(local.characters):character => local.enemies_destroyed[index]]
+
+}

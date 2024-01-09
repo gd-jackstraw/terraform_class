@@ -1,7 +1,7 @@
 resource "azurerm_subnet" "vn-subnet" {
   name                 = "internal"
   resource_group_name  = azurerm_resource_group.tf-rg-philippe.name
-  virtual_network_name = azurerm_virtual_network.tf-rg-philippe.name
+  virtual_network_name = azurerm_virtual_network.vn-sg1.name
   address_prefixes     = ["10.0.2.0/24"]
 }
 

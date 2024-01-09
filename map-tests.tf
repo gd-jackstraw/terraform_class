@@ -4,11 +4,11 @@ locals {
 
 map = {
   for index, character in toset(local.characters) :
-# Convert chracter list to a set
+# Convert character list to a set
     character => local.enemies_destroyed[index]
   }
 }
 
 output "starwars_char_deaths"{
-  value= [for index, character in toset(local.characters):character => local.enemies_destroyed[index]]
+  value= [for index in local.characters :character => local.enemies_destroyed[index]]
 }

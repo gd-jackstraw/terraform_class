@@ -15,7 +15,7 @@ locals {
 
 
 locals {
-  characters = ["luke", "yoda", "darth"}
+  characters = ["luke", "yoda", "darth"]
   enemies_destroyed = [4252, 900, 29320984098]
 
 map = {

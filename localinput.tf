@@ -12,15 +12,3 @@ locals {
   variousnumbers = [150, 200, 150] 
   cluster_names = ["k8syvr", "k8syyz", "k8sycg", "k8syul"]
 }
-
-
-locals {
-  characters = ["luke", "yoda", "darth"]
-  enemies_destroyed = [4252, 900, 29320984098]
-
-map = {
-  for index, character in toset(local.characters) :
-# Convert chracter list to a set
-    character => local.enemies_destroyed[index]
-  }
-}

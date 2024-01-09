@@ -22,7 +22,7 @@ resource "azurerm_virtual_network" "virtual-network-group" {
 }
 
 resource "azurerm_virtual_network" "linux-vm-virtualnetwork" {
-  name                = "linux-vm-vn>
+  name                = "linux-vm-vn"
   location            = azurerm_resource_group.tf-rg-philippe.location
   resource_group_name = azurerm_resource_group.tf-rg-philippe.name
   address_space       = ["10.0.0.0/16"]

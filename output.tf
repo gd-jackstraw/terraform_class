@@ -67,3 +67,7 @@ output "map_of_object_ex" {
 output "map_of_force_users" {
   value = var.force_map
 }
+
+output "lightsaber_colors" {
+  value = var.lightsaber_color_map
+}

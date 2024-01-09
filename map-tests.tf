@@ -10,5 +10,5 @@ map = {
 }
 
 output "character_kills"{
-  value= [for index in toset(local.characters):character => local.enemies_destroyed[index]]
+  value= [for index in local.characters:character => local.enemies_destroyed[index]]
 }

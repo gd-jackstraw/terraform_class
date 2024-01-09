@@ -63,3 +63,7 @@ output "sumofnumberlist_2"{
 output "map_of_object_ex" {
   value = var.example_map
 }
+
+output "map_of_force_users" {
+  value = var.force_map
+}

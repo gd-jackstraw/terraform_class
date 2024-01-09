@@ -113,3 +113,12 @@ variable "force_map" {
     darth = "sith"
   }
 }
+
+variable "lightsaber_color_map" {
+type = map(list)string))
+  default {
+    luke = ["green", "blue"]
+    yoda = ["green"]
+    darth = ["red"]
+  }
+}

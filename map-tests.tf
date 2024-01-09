@@ -9,6 +9,6 @@ map = {
   }
 }
 
-output "character_kills"{
+output "starwars_char_deaths"{
   value= [for index, character in toset(local.characters):character => local.enemies_destroyed[index]]
 }

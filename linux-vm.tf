@@ -28,10 +28,6 @@ count = 5
     azurerm_network_interface.linux-nic.id,
   ]
 
-  admin_ssh_key {
-    username   = "adminuser"
-    public_key = file("~/.ssh/id_rsa.pub")
-  }
 
   os_disk {
     caching              = "ReadWrite"

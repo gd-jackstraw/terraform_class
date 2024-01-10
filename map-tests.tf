@@ -28,3 +28,4 @@ value = local.simple_local_flattened_list
 
 output "simple_nested_list_result" {
 value = var.simple_nested_list
+}

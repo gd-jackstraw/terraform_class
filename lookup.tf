@@ -25,7 +25,7 @@ variable "user_roles" {
   }
 }
 
-variable "default_roles" {
+variable "default_role" {
   type = string
   default = "guest"
 }

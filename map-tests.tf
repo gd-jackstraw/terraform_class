@@ -17,7 +17,7 @@ locals {
   }
 }
 output "alpha-letter_readout" {
-  vaue = local.map_of_alpha-letter
+  value = local.map_of_alpha-letter
 }
 
 output "starwars_char_deaths"{

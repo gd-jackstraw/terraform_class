@@ -33,9 +33,9 @@ variable "default_role" {
 locals {
   user_role_lookup = {
     alice = lookup(var.user_roles, "alice", var.default_role)
-    bob = lookup(var.user_roles, "alice", var.default_role)
-    charlie  = lookup(var.user_roles, "alice", var.default_role)
-    david = lookup(var.user_roles, "alice", var.default_role)
+    bob = lookup(var.user_roles, "bob", var.default_role)
+    charlie  = lookup(var.user_roles, "charlie", var.default_role)
+    david = lookup(var.user_roles, "david", var.default_role)
   }
 }
 

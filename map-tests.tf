@@ -8,6 +8,17 @@ map = {
   character => local.enemies_destroyed[index]
  }
 }
+locals {
+  alphabets=["a","b","c","d","e"]
+  numbers=[1,2,3,4,5]
+
+map_of_alpha-letter = {
+for index, letter in local.alphabets:letter => local.numbers[index]
+}
+
+output "alpha-letter_readout" {
+  vaue = local.map_of_alpha-letter
+}
 
 output "starwars_char_deaths"{
  value= local.map

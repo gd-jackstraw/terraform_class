@@ -5,7 +5,7 @@ locals {
         for linuxapps in try(app.listoflinuxapp, {}) : {
           name=linuxapps.name
           ostype=linuxapps.os_type
-          sku_name=linuxapps.skuname
+          sku_name=linuxapps.sku_name
           }
         ]
       ])

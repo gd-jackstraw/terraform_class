@@ -12,5 +12,5 @@ locals {
     }
 
 output "list_of_linux_app" {
-value = local.linux_app_list
+value = local.linux_app
 }

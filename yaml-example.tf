@@ -11,6 +11,10 @@ locals {
       ])
     }
 
-output "list_of_linux_app" {
+output "set_linux_app" {
 value = local.linux_app
+}
+
+output "list_of_linux_app" {
+value = local.linux_app_list
 }

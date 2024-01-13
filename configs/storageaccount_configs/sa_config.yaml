@@ -1,12 +1,11 @@
 listofstorageaccount:
--name: philmcitstorageaccount1
-  account_tier: Standard
+  -  name: philmcitstorageaccount1
+    account_tier: Standard
     account_replication_type: GRS
     access_tier: Cool
-    cross_tenant_replication_enabled: false
-    
--name: philmcitstorageaccount2
-  account_tier: Standard
+    cross_tenant_replication_enabled: enabled
+  -  name: philmcitstorageaccount2
+    account_tier: Standard
     account_replication_type: GRS
     access_tier: Cool
-    cross_tenant_replication_enabled: false
+    cross_tenant_replication_enabled: enabled

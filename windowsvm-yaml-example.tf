@@ -49,3 +49,7 @@ resource "azurerm_windows_virtual_machine" "windows-vm-machine" {
     version   = "latest"
   }
 }
+
+output "windows_vm_output_yaml" {
+ value=local.windowsvm_list
+}

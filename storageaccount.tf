@@ -23,7 +23,7 @@ locals{
         name=storageaccount.name
         account_tier=storageaccount.account_tier
         account_replication_type=storageaccount.account_replication_type    
-        access_tier=storageaccount. access_tier
+        access_tier=storageaccount.access_tier
         cross_tenant_replication_enabled=storageaccount.cross_tenant_replication_enabled
       }
     ]

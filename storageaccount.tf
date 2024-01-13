@@ -16,9 +16,9 @@ resource "azurerm_storage_account" "tf-storageaccount" {
 }
 
 locals{
- storageaccounts=[for sa in fileset("${path.module}/configs/storageaccount_configs", "[^_]*.yaml") : yamldecode(file("${path.module}/configs/storageaccount_configs/${sa}"))]
+ storageaccounts=[for f in fileset("${path.module}/configs/storageaccount_configs", "[^_]*.yaml") : yamldecode(file("${path.module}/configs/storageaccount_configs/${f}"))]
  storageaccountlist = flatten([
-    for data in local.storageaccount : [
+    for data in local.storageaccounts : [
       for storageaccount in try(data.listofstorageaccount, []) :{
         name=storageaccount.name
         account_tier=storageaccount.account_tier

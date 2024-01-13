@@ -13,6 +13,16 @@ locals{
 ])
 }
 
+resource "azurerm_storage_account" "storageaccount-yaml-example" {
+  for_each            ={for sa in local.storageaccountlist: "${sa.name}"=>sa }
+  name                = each.value.name
+  resource_group_name = azurerm_resource_group.tf-rg-philippe.name
+  location            = azurerm_resource_group.tf-rg-philippe.location
+  tags = {
+    environment = "staging"
+  }
+}
+
 output "storageaccount_list_yaml" {
  value = local.storageaccountlist
 }

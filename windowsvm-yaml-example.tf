@@ -26,7 +26,7 @@ resource "azurerm_network_interface" "windows-nic" {
 
 
 resource "azurerm_windows_virtual_machine" "windows-vm-machine" {
-  for_each            ={for wvm in local.windowsvm_list: "${sa.name}"=>wvm }
+  for_each            ={for wvm in local.windowsvm_list: "${wvm.name}"=>wvm }
   name                = each.value.name
   resource_group_name = azurerm_resource_group.tf-rg-philippe.name
   location            = azurerm_resource_group.tf-rg-philippe.location

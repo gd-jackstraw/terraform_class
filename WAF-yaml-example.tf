@@ -16,6 +16,7 @@ resource "azurerm_web_application_firewall_policy" "waf-windowsvm" {
   for_each            ={for waf in local.waf-vm_0: "${waf.name}"=>waf }
   name                = each.value.name
   for_each            ={for waf-rg in local.waf-vm_0: "${waf-rg.resource_group_name}"=>waf-rg }
+  resource_group_name = each.value.resource_group_name
   location            = azurerm_resource_group.tf-rg-philippe.location
 }
 

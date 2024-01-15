@@ -1,3 +1,4 @@
 wafpolicy:
   - name: waf-policy1
     resource_group_name: tf-rg-philippe
+    location: tf-rg-philippe

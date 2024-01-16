@@ -1,5 +1,7 @@
 loadbalancer_config:
   - name: loadbalancer1
+    allocation_method: static
   - name: loadbalancer2
+    allocation_method: static
   - name: loadbalancer3
-
+    allocation_method: static

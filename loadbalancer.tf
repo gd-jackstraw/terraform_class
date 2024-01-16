@@ -2,7 +2,7 @@ locals {
   loadbalancer=[for f in fileset("${path.module}/config/loadbalancer-config", "[^_]*.yaml") : yamldecode(file("${path.module}/config/loadbalancer_config/${f}"))]
   lb_list = flatten([
     for lb in local.loadbalancer : [
-      for lb-config in try(lb.loadbalancer_config, []) :{
+      for lb-config in try(lb.loadbalancer-config, []) :{
         name=lb-config.name
       }
     ]

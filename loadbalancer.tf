@@ -18,10 +18,10 @@ resource "azurerm_public_ip" "public_lb_ip" {
   name                = "PublicIPForLB"
   location            = azurerm_resource_group.lb-rg.location
   resource_group_name = azurerm_resource_group.lb-rg.name
-  allocation_method   = Static
+  allocation_method   = "Static"
 }
 
-resource "azurerm_lb" "loadbalancer_resrouce" {
+resource "azurerm_lb" "loadbalancer_resource" {
    for_each            ={for sp in local.lb_list: "${sp.name}"=>sp }
   name                = each.value.name
   location            = azurerm_resource_group.lb-rg.location

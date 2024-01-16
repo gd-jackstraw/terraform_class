@@ -1,3 +1,8 @@
+output "WAF-policy-name" {
+ value = local.waf-list
+}
+
+
 locals{
  waf_vm_0 =[for f in fileset("${path.module}/configs/waf-config", "[^_]*.yaml") : yamldecode(file("${path.module}/configs/waf-config/${f}"))]
  waf-list = flatten([

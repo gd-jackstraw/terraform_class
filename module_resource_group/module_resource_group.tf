@@ -13,3 +13,7 @@ resource "azurerm_resource_group" "module-example-rg" {
     location                 = var.location
 
 }
+
+output "resource_group_name" {
+  value = azurerm_rsource_group.module-example-rg.name
+}

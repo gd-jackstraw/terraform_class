@@ -17,9 +17,9 @@ variable "nested_map_exam" {
   }
 }
 locals{
- flattened_map  = flatten([for k, v in var.nested_map_exam : [for kk, vv in v : { group = k, key = kk, value = vv }]])
+ flattened_map_exam  = flatten([for k, v in var.nested_map_exam : [for kk, vv in v : { group = k, key = kk, value = vv }]])
    }
 output "flattened_map_result" {
-  value = local.flattened_map
+  value = local.flattened_map_exam
 }
 

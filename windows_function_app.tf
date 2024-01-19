@@ -1,9 +1,5 @@
-provider "azurerm" {
-  features {}
-}
-
 resource "azurerm_resource_group" "exam_example" {
-  name     = "example-rg"
+  name     = "exam_example-rg"
   location = "West Europe"
 }
 

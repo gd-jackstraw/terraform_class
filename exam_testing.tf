@@ -9,7 +9,7 @@ output "flattened_list_result" {
   value = local.flattened_list
 }
 
-variable "nested_map" {
+variable "nested_map_exam" {
   type    = map(map(string))
   default = {
     group1 = {"name" = "Bob", "age" = "25"}
@@ -17,7 +17,7 @@ variable "nested_map" {
   }
 }
 locals{
- flattened_map  = flatten([for k, v in var.nested_map : [for kk, vv in v : { group = k, key = kk, value = vv }]])
+ flattened_map  = flatten([for k, v in var.nested_map_exam : [for kk, vv in v : { group = k, key = kk, value = vv }]])
    }
 output "flattened_map_result" {
   value = local.flattened_map

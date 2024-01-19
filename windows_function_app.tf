@@ -18,8 +18,6 @@ locals{
 ])
 }
 
-example_name
-
 resource "azurerm_storage_account" "sa_exam_example" {
   for_each            ={for sa in local.windows_fa_list: "${sp.example_name}"=>sp }
   name                     = "windowsfunctionappsa"

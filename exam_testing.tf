@@ -25,5 +25,12 @@ output "flattened_map_result" {
 
 output "character_mapping"{
 value={for index,character in local.characters:
-      character => local.enemies_destroyed[index]
+      character => local.enemies_destroyed[index]}
+}
+
+locals{
+  total_output = ["150", "150", "150"]
+}
+output "sumofthreenumbers"{
+    value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
 }

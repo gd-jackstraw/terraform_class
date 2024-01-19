@@ -47,3 +47,4 @@ resource "azurerm_windows_function_app" "windows_function_app_exam" {
   service_plan_id            = azurerm_service_plan.sp_exam_example.id
 
   site_config {}
+}

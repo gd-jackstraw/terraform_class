@@ -22,10 +22,4 @@ locals{
 output "flattened_map_result" {
   value = local.flattened_map
 }
-The output should be the following:
-[
-  { group = "group1", key = "name", value = "Alice" },
-  { group = "group1", key = "age", value = "25" },
-  { group = "group2", key = "name", value = "Bob" },
-  { group = "group2", key = "age", value = "30" }
-]
+

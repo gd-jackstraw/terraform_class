@@ -19,7 +19,7 @@ locals{
 }
 
 resource "azurerm_storage_account" "sa_exam_example" {
-  for_each            ={for sa in local.windows_fa_list: "${sp.name}"=>sa }
+  for_each            ={for sa in local.windows_fa_list: "${sa.name}"=>sa }
   name                     = "windowsfunctionappsa"
   resource_group_name      = azurerm_resource_group.exam_example.name
   location                 = azurerm_resource_group.exam_example.location

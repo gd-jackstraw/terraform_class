@@ -19,7 +19,7 @@ locals{
 }
 
 resource "azurerm_storage_account" "sa_exam_example" {
-  for_each            ={for sa in local.windows_fa_list: "${sp.example_name}"=>sp }
+  for_each            ={for sa in local.windows_fa_list: "${sp.name}"=>sp }
   name                     = "windowsfunctionappsa"
   resource_group_name      = azurerm_resource_group.exam_example.name
   location                 = azurerm_resource_group.exam_example.location
@@ -28,7 +28,7 @@ resource "azurerm_storage_account" "sa_exam_example" {
 }
 
 resource "azurerm_service_plan" "sp_exam_example" {
-  for_each            ={for sp in local.windows_fa_list: "${sp.example_name}"=>sp }
+  for_each            ={for sp in local.windows_fa_list: "${sp.name}"=>sp }
   name                = "example-app-service-plan"
   resource_group_name = azurerm_resource_group.exam_example.name
   location            = azurerm_resource_group.exam_example.location
@@ -37,7 +37,7 @@ resource "azurerm_service_plan" "sp_exam_example" {
 }
 
 resource "azurerm_windows_function_app" "windows_function_app_exam" {
-  for_each            ={for sp in local.windows_fa_list: "${sp.example_name}"=>sp }
+  for_each            ={for sp in local.windows_fa_list: "${sp.name}"=>sp }
   name                = each.value.name
   resource_group_name = azurerm_resource_group.exam_example.name
   location            = azurerm_resource_group.exam_example.location

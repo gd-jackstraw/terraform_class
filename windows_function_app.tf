@@ -20,7 +20,7 @@ locals{
 
 resource "azurerm_storage_account" "sa_exam_example" {
   for_each                  ={for fa in local.windows_fa_list: "${fa.name}"=>fa }
-  name                     = "windowsfunctionappsa"
+  name                     = each.value.name
   resource_group_name      = azurerm_resource_group.exam_example.name
   location                 = azurerm_resource_group.exam_example.location
   account_tier             = each.value.account_tier
@@ -29,7 +29,7 @@ resource "azurerm_storage_account" "sa_exam_example" {
 
 resource "azurerm_service_plan" "sp_exam_example" {
   for_each = azurerm_storage_account.sa_exam_example
-  name                = "example-app-service-plan"
+  name                = each.value.name
   resource_group_name = azurerm_resource_group.exam_example.name
   location            = azurerm_resource_group.exam_example.location
   os_type             = each.value.os_type
@@ -44,7 +44,7 @@ resource "azurerm_windows_function_app" "windows_function_app_exam" {
 
   storage_account_name       = azurerm_storage_account.sa_exam_example.name
   storage_account_access_key = azurerm_storage_account.sa_exam_example.primary_access_key
-  service_plan_id            = azurerm_service_plan.sp_exam_example.id
+  service_plan_id            = each.value.id
 
   site_config {}
 }

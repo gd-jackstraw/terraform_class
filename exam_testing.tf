@@ -26,3 +26,4 @@ output "flattened_map_result" {
 output "character_mapping"{
 value={for index,character in local.characters:
       character => local.enemies_destroyed[index]
+}

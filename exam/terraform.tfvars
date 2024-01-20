@@ -1,0 +1,5 @@
+name = "examplewindowsfunctionapp"
+account_tier = "Standard"
+account_replication_type = "lrs"
+os_type = "Windows"
+sku_name = "y1"

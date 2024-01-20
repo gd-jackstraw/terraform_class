@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "exam_example" {
+/* resource "azurerm_resource_group" "exam_example" {
   name     = "exam_example-rg"
   location = "West Europe"
 }
@@ -48,3 +48,4 @@ resource "azurerm_windows_function_app" "windows_function_app_exam" {
 
   site_config {}
 }
+*/

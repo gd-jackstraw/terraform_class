@@ -5,7 +5,3 @@ module "windowsfuction_app" {
   account_replication_type= var.account_replication_type
   os_type= var.os_type
   sku_name= var.os_type
-
-output "wfaname_output" {
-value = var.wfaname
-}

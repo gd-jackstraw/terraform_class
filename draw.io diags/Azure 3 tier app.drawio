@@ -1,4 +1,4 @@
-<mxfile modified="2024-01-20T00:23:21.232Z" host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="iHLdV-NeepDNWUqbXz9d" version="22.1.21" type="github">
+<mxfile modified="2024-01-20T00:32:16.570Z" host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="SpGnkLc2CdvVvgbnHS0V" version="22.1.21" type="github">
   <diagram id="7gcUSTIZ7YSJ5vT40chW" name="Page-1">
     <mxGraphModel dx="1235" dy="665" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -89,38 +89,20 @@
         <mxCell id="YcC1qIT02xYOdB0MG6hS-35" value="Load Balancer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;strokeWidth=0;fontSize=14;fontStyle=1;labelBackgroundColor=default;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
           <mxGeometry x="465" y="214" width="160" height="43.5" as="geometry" />
         </mxCell>
-        <mxCell id="YcC1qIT02xYOdB0MG6hS-40" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#7FBA42;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
-          <mxGeometry x="192" y="270" width="28" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="YcC1qIT02xYOdB0MG6hS-41" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Public Subnet 1&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
           <mxGeometry x="220" y="263.25" width="140" height="43.5" as="geometry" />
-        </mxCell>
-        <mxCell id="YcC1qIT02xYOdB0MG6hS-42" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#7FBA42;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
-          <mxGeometry x="580.5" y="270" width="28" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YcC1qIT02xYOdB0MG6hS-43" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Public Subnet 2&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
           <mxGeometry x="608.5" y="263.25" width="140" height="43.5" as="geometry" />
         </mxCell>
-        <mxCell id="YcC1qIT02xYOdB0MG6hS-44" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#2072B8;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
-          <mxGeometry x="190" y="595" width="28" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="YcC1qIT02xYOdB0MG6hS-45" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Private Subnet 1&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
           <mxGeometry x="218" y="588.25" width="140" height="43.5" as="geometry" />
-        </mxCell>
-        <mxCell id="YcC1qIT02xYOdB0MG6hS-46" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#2072B8;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
-          <mxGeometry x="580.5" y="595" width="28" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YcC1qIT02xYOdB0MG6hS-47" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Private Subnet 2&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
           <mxGeometry x="608.5" y="588.25" width="140" height="43.5" as="geometry" />
         </mxCell>
-        <mxCell id="YcC1qIT02xYOdB0MG6hS-48" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#2072B8;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
-          <mxGeometry x="190" y="867.75" width="28" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="YcC1qIT02xYOdB0MG6hS-49" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Private Database Subnet 1&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
           <mxGeometry x="218" y="861" width="82" height="59" as="geometry" />
-        </mxCell>
-        <mxCell id="YcC1qIT02xYOdB0MG6hS-50" value="" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;align=center;shape=mxgraph.office.security.lock_protected;fillColor=#2072B8;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
-          <mxGeometry x="580.5" y="871.75" width="28" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YcC1qIT02xYOdB0MG6hS-51" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Private Database Subnet 2&lt;br&gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
           <mxGeometry x="608.5" y="871.75" width="82" height="59" as="geometry" />
@@ -149,7 +131,7 @@
         <mxCell id="YcC1qIT02xYOdB0MG6hS-61" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.sql_database;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
           <mxGeometry x="696.5" y="945" width="37.5" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="YcC1qIT02xYOdB0MG6hS-62" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;SQL Database read replica&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontSize=18;fontStyle=0" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
+        <mxCell id="YcC1qIT02xYOdB0MG6hS-62" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;SQL Database secondary&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;labelBackgroundColor=default;fontSize=18;fontStyle=0" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">
           <mxGeometry x="619.25" y="1001" width="192" height="46" as="geometry" />
         </mxCell>
         <mxCell id="YcC1qIT02xYOdB0MG6hS-63" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.virtual_machine;" vertex="1" parent="YcC1qIT02xYOdB0MG6hS-1">

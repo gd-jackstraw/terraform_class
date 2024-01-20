@@ -1,4 +1,4 @@
-name = "examplewindowsfunctionapp"
+wfaname = "examplewindowsfunctionapp"
 account_tier = "Standard"
 account_replication_type = "lrs"
 os_type = "Windows"
